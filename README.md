@@ -8,9 +8,9 @@
 
 ```
 emircan_kilic_case/
-├── api_case/      → Petstore API test otomasyonu (Rest Assured)
-├── ui_case/       → Insider kariyer sayfası UI test otomasyonu (Selenium)
-└── load_case/     → n11.com arama modülü yük testi (JMeter)
+├── api_case/      → API test otomasyon projesi (Rest Assured)
+├── ui_case/       → UI test otomasyon projesi (Selenium)
+└── load_case/     → Yük testi projesi (JMeter)
 ```
 
 ---
@@ -19,9 +19,9 @@ emircan_kilic_case/
 
 | Modül | Açıklama | Teknolojiler |
 |-------|----------|--------------|
-| **api_case** | Petstore API üzerinde REST API testleri (CRUD, negatif, smoke) | Java 17, Rest Assured, TestNG, Allure |
-| **ui_case** | insiderone.com kariyer sayfası end-to-end UI testleri | Java 17, Selenium WebDriver, TestNG, Allure |
-| **load_case** | n11.com arama sayfası performans ve yük testleri | JMeter 5.6+ |
+| **api_case** | API test otomasyon projesi |
+| **ui_case** | UI test otomasyon projesi |
+| **load_case** | Yük testi projesi |
 
 ---
 
@@ -53,7 +53,7 @@ mvn allure:serve
 
 ## 2. UI Test Modülü (`ui_case`)
 
-Insider kariyer sayfası için Selenium WebDriver ile yazılmış UI otomasyonu. Kariyer başvuru akışını uçtan uca test eder.
+Kariyer sayfası için Selenium WebDriver ile yazılmış UI otomasyonu. Kariyer başvuru akışını uçtan uca test eder.
 
 ### Gereksinimler
 - Java 17+
@@ -68,8 +68,8 @@ mvn clean test
 mvn allure:serve
 ```
 
-### Test Akışı (InsiderFullFlowTest)
-1. **Ana Sayfa** — insiderone.com açılır, temel bloklar doğrulanır
+### Test Akışı
+1. **Ana Sayfa** — Website açılır, temel bloklar doğrulanır
 2. **Kariyer Sayfası** — QA ekibi seçilir, Istanbul lokasyonu ve departman filtrelenir
 3. **İlan Listesi** — Filtrelenmiş ilanların ve bilgilerin doğruluğu kontrol edilir
 4. **Lever Başvuru** — İlan açılır, Lever sayfasında başvuru formu ve ilan detayları doğrulanır
@@ -81,7 +81,7 @@ mvn allure:serve
 
 ## 3. Yük Test Modülü (`load_case`)
 
-n11.com arama modülü için JMeter tabanlı yük ve performans testi.
+ Arama modülü için JMeter tabanlı yük ve performans testi.
 
 ### Gereksinimler
 - Java 8+
