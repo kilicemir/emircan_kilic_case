@@ -1,6 +1,6 @@
 # emircan_kilic_case
 
-Üç modüllü test otomasyon projesi: API testleri, UI testleri ve yük testleri. Proje Petstore API, Insider kariyer sayfası ve n11 arama modülü üzerinde çalışır.
+Üç modüllü test otomasyon projesi: API testleri, UI testleri ve yük testleri.
 
 ---
 
